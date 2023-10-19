@@ -1,0 +1,24 @@
+<div class="ekart--product--container">
+    <app-search (searchTextChanged)="setSearchText($event)"></app-search>
+    <product-list [searchText]="searchText" #productListComponent></product-list>
+    <product-detail *ngIf="productListComponent.selectedProduct"></product-detail>
+</div>
+<!--<img [src]="product.image">  //src={{product.image}} also we can use
+<p>Name: {{product.name}}</p>
+<p>Price: {{product.price}}/-</p>
+<p>Color: {{product.color}}</p>
+<p>Discount: {{getDiscountedPrice().toFixed(1) }}/-</p>
+<p>{{getStock()}}</p>
+<button [disabled]="!(product.inStock > 0)" (click)="OnClick()">Buy now</button> //bind-disabled=""
+<input [value]="name" (input)="onNameChange($event)" >   //we can use i.e., bind-value="name"
+ disabled, hidden, Checked  for these string interpolation will not work so property binding should use
+<p>{{name}}</p>
+
+<button (click)="decrementalValue()">-</button>
+<span>{{addToCart}}</span>
+<button (click)="incrementalValue()">+</button>-->
+
+<!--for the attributes like aria-hidden we can use [attr.aria-hidden]-->
+
+
+
